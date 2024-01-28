@@ -28,6 +28,7 @@ const bodyParser = require('body-parser');
 
 const prisma = new PrismaClient();
 const app = express();
+const path = require('path');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
